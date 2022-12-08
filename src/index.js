@@ -32,6 +32,8 @@ function countryName(name) {
    clin()
   }
   
+  if (name.length > 1 && name.length <= 10) refs.countryInfo.innerHTML = '';;
+  
   if (name.length === 1) {
     refs.countryInfo.innerHTML = createMarkup(name);
     refs.list.innerHTML = '';
