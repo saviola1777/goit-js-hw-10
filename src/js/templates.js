@@ -23,3 +23,6 @@ function createMarkup(namesCountry) {
 }
 
 export { createMarkupList, createMarkup };
+
+// це в нас буде розмітка де ми створюємо фунуцію createMarkupList(namesCountry) в  яку ми будемо передавати назву країни воно поверне 
+// нам обезкт яку має йя назва далі ми перебираємо т ізначення які нам треба ({ flags, name}) і вписуємо їх 
