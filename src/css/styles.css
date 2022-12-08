@@ -10,11 +10,28 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  
 }
+
 
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+.img{
+  margin-right: 20px;
+
+}
+
+.item-contry {
+  list-style: none;
+}
+.country-list{
+  padding: 0px;
+}
+
+.span-id{
+  font-size: 25px;
 }

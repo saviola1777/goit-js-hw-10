@@ -2,8 +2,8 @@ function createMarkupList(namesCountry) {
   return namesCountry
     .map(({ flags, name}) => {
       return `<li class='item-contry'>
-      <button class='button'><img height=20px src="${flags.svg}">
-        <p>${name.official}</p></button></li>`;
+     <img class='img' width='40' src="${flags.svg}">
+        <span class=span-id>${name.official}</span></li>`;
     })
     .join('');
 }
