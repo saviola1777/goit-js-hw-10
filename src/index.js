@@ -23,6 +23,7 @@ function onInput(e) {
   const value =e.target.value.trim()
   if (value.length < 1) clin();
   fetchCountries(value).then(countryName).catch(error)
+  console.log(fetchCountries(value))
 }
 
 function countryName(name) {

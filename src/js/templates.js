@@ -11,14 +11,14 @@ function createMarkupList(namesCountry) {
 function createMarkup(namesCountry) {
   return namesCountry
     .map(({ flags, name , capital ,population, languages }) => {
-
+      const lang = Object.values(languages)
       return `<div>
     <img height="24" src="${flags.svg}" />
     <h2 class="country-name">${name.official}</h2>
   </div>
   <p class="descr"><span>Capital</span>: ${capital}</p>
   <p class="descr"><span>Population</span>: ${population}</p>
-  <p class="descr"><span>Languages</span>: ${languages.spa}</p>`;
+<p class="descr"><span>Languages</span>: ${lang}</p>`;
     }).join()
 }
 
