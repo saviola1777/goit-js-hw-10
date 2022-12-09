@@ -21,7 +21,7 @@ function clin() {
 
 function onInput(e) {
   const value =e.target.value.trim()
-  if (value.length < 1) clin();
+  if (value.length < 1) return;
   fetchCountries(value).then(countryName).catch(error)
   console.log(fetchCountries(value))
 }
@@ -47,7 +47,7 @@ function error() {
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
-// Ми повісили на інпутподію колбер фукцію і обробник події  300 мілісекунд refs.input.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY))
+// Ми повісили на інпут на подію колбек фукцію і обробник події  300 мілісекунд refs.input.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY))
 // Далі создаємо clin()--- де ми будемо очищати поля тобто ту розмітку яку ми створемо то при потребі видалемо 
 
 // function onInput(e) === де наше const value буде те що ми водимо в імпут і в нас умова якшо буде менше одної букви(value.length < 1) то воно 
